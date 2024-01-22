@@ -1,0 +1,107 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
+  padding: 20px;
+}
+
+.sidebar {
+  grid-row: 1 / 3;
+}
+
+.dashboard-links {
+  display: grid;
+  grid-template-columns: 1fr 19fr;
+  margin-bottom: 40px;
+}
+
+.sidebar-main-links {
+  display: grid;
+  grid-template-columns: 1fr 19fr;
+  row-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.sidebar-second-links {
+  display: grid;
+  grid-template-columns: 1fr 19fr;
+  row-gap: 20px;
+}
+
+.header-first-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 50px;
+}
+
+.account-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+}
+
+.header-second-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.account-greeting {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.account-greeting-msg {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: -100px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 2 / 3;
+  gap: 20px;
+  margin: 10px 10px 10px 0px;
+  margin-top: -760px;
+}
+
+.card {
+  border: 1px solid lightgray;
+  padding: 25px;
+  display: grid;
+}
+
+.annoucements {
+  display: grid;
+  border: 1px solid lightgray;
+  margin: 10px 0px;
+}
+
+.annoucement {
+  display: grid;
+  padding: 25px;
+}
+
+.annoucement hr {
+  width: 100%;
+}
+
+.trending {
+  display: grid;
+  border: 1px solid lightgray;
+  margin: 10px 0px;
+}
+
+.trending-profile {
+  display: grid;
+  padding: 25px;
+}
