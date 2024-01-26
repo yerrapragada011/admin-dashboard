@@ -140,12 +140,12 @@
 
 .header-links {
   display: grid;
-  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   max-width: 300px;
-  padding-left: 190px;
+  padding-left: 120px;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
 }
 
 .header-links button {
