@@ -8,8 +8,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: min-content min-content;
+  grid-template-columns: auto auto;
 }
 
 .sidebar {
@@ -295,6 +294,6 @@
   gap: 5px;
 }
 
-.trending-profile-span span:nth-child(2) {  
+.trending-profile-span span:nth-child(2) {
   color: gray;
 }
