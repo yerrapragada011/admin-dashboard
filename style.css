@@ -122,7 +122,7 @@
 
 .account-greeting img {
   justify-self: end;
-  height: 70px;
+  height: 80px;
   border-radius: 50%;
 }
 
@@ -282,12 +282,15 @@
 }
 
 .trending-profile img {
-  width: 50px;
+  width: 60px;
   border-radius: 50%;
+  align-self: center;
 }
 
 .trending-profile-span {
   display: grid;
+  align-self: center;
+  gap: 5px;
 }
 
 .trending-profile-span span:nth-child(2) {
