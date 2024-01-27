@@ -6,19 +6,23 @@
   font-family: 'Roboto', sans-serif;
 }
 
+html,
+body {
+  min-height: 100%;
+}
+
 .container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 20% 80%;
 }
 
 .sidebar {
+  height: 100%;
   grid-row: 1 / 3;
   background-color: #1992d4;
   color: white;
   font-size: 20px;
   font-weight: 600;
-  padding: 20px 40px;
-  height: 100%;
 }
 
 .mdi-view-dashboard {
@@ -31,24 +35,25 @@
 
 .dashboard-links {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: auto 1fr;
   margin-bottom: 40px;
   align-items: center;
   gap: 15px;
-  margin-left: -10px;
+  margin: 20px 30px;
 }
 
 .sidebar-main-links {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  row-gap: 20px;
-  margin-bottom: 50px;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  margin: 60px 40px;
 }
 
 .sidebar-second-links {
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  row-gap: 20px;
+  grid-template-columns: auto 1fr;
+  margin: 60px 40px;
+  gap: 20px;
 }
 
 .header {
@@ -159,12 +164,12 @@
 
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 0px 20px 40px 20px;
+  grid-template-columns: 75% 25%;
+  padding: 0px 60px 20px 20px;
   background-color: #e2e8f0;
-  height: 100%;
   box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.1),
     0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  column-gap: 10px;
 }
 
 .first-span {
@@ -172,15 +177,17 @@
   font-size: 20px;
   margin: 25px 0px;
   align-self: center;
+  padding-left: 10px;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 20px;
-  padding: 0px 20px 0px 0px;
   grid-column: 1 / 2;
   grid-row: 2 / 5;
+  max-width: 95%;
+  padding-left: 10px;
 }
 
 .card {
@@ -202,29 +209,25 @@
 
 .card-text {
   color: gray;
-  max-width: max-content;
+  width: 100%;
 }
 
 .card-icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  max-width: 500px;
-  padding-left: 400px;
-  justify-items: end;
+  justify-self: end;
   font-size: 25px;
 }
 
 .annoucements {
   display: grid;
   border: 1px solid #e2e8f0;
-  grid-column: 2 / 3;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  padding: 5px;
   align-items: center;
-  justify-content: center;
+  padding: 10px 10px;
 }
 
 .annoucement {
@@ -266,6 +269,7 @@
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  max-width: 100%;
 }
 
 .trending-span {
@@ -278,7 +282,7 @@
 .trending-profile {
   display: grid;
   padding: 25px;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: 25% 75%;
   gap: 20px;
 }
 
